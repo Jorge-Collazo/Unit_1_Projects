@@ -1,4 +1,4 @@
-
+"use strict"
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -13,7 +13,12 @@
    student union.
 
 */
-
+//
+var thisDate = new Date("October 12, 2018");
+//
+var dateString = new Date("thisDate");
+//
+var dateHTML = new Date()
 
 
 function getEvent(day) {
