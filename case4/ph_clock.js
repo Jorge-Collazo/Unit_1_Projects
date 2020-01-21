@@ -1,11 +1,12 @@
+"use strict"
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
    Case Problem 4
 
    Countdown Clock for Ticket Ordering
-   Author: 
-   Date:  
+   Author: Jorge Collazo
+   Date:  1-21-20
 
    Filename:   ph_clock.js     
 
