@@ -12,7 +12,13 @@
    quotation tag in the Web page.
 
 */
-
+function RandomInt(Lowest, Size){
+   var rand = Math.random()*10;
+   Math.floor();
+   var rand = Math.floor(Math.random()*Size+Lowest);
+return rand
+RandomInt(5,10)
+}
 
 function getQuote(n) {
    var quotes = [

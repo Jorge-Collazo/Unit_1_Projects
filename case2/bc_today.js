@@ -14,11 +14,17 @@
 
 */
 //
-var thisDate = new Date("October 12, 2018");
+var thisDate = new Date();
 //
-var dateString = new Date("thisDate");
+var dateString = thisDate.toLocaleDateString('en-us');
 //
-var dateHTML = new Date()
+var dateHTML = "<h2>" + dateString + "</h2>";
+//
+var thisDay = thisDate.getDay();
+//
+var eventHTML = getEvent(thisDay);
+//
+document.getElementById("unionToday").insertAdjacentHTML('beforeEnd', dateHTML + eventHTML);
 
 
 function getEvent(day) {
