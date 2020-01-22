@@ -11,11 +11,28 @@
    Filename:   ph_clock.js     
 
 */
+//Global Variables
+var minsLeft = 30;
+var secsLeft = 0;
+var timeLeft = (minsLeft * 60) + (secsLeft);
+var clockID = setInterval("countdown()", 1000);
 
-
-
-
-
+//Function to countdown
+function countdown(){
+   var minsLeft = Math.floor(timeLeft / 60);
+   var secsLeft = (timeLeft) - (60 * minsLeft);
+   var minsString = addLeadingZero(minsLeft);
+   var secsString = addLeadingZero(secsLeft);
+   document.getElementById("minutes").textContent = minsString;
+   document.getElementById("seconds").textContent = secsString;
+   checkTimer();
+   timeLeft--;
+}
+//Function to stop the clock
+function stopClock(){
+   document.getElementById("TimeHead").insertAdjacentHTML('beforeEnd', '<br /> Order Expired');
+   clearInterval(clockID);
+}
 
 /* ------------------------------------------------- */
 
